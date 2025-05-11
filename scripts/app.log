@@ -1,0 +1,580 @@
+2025-05-11 18:49:30,940 - News Chatbot - INFO - Loaded .env from: D:\Virafast\news-chatbot\.env
+2025-05-11 18:49:41,935 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 18:49:43,982 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 18:49:44,693 - News Chatbot - INFO - ChromaDB client initialized successfully
+2025-05-11 18:49:44,701 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 18:49:45,353 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 18:49:45,353 - News Chatbot - INFO - Starting news ingestion
+2025-05-11 18:49:45,353 - News Chatbot - INFO - Initializing Redis client...
+2025-05-11 18:49:47,429 - News Chatbot - INFO - Redis initialized successfully
+2025-05-11 18:49:47,429 - News Chatbot - INFO - Initializing ChromaDB collection...
+2025-05-11 18:49:47,433 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 18:49:47,433 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 18:49:47,446 - News Chatbot - INFO - Created ChromaDB collection 'news_articles'
+2025-05-11 18:49:47,446 - News Chatbot - INFO - Created new ChromaDB collection 'news_articles'
+2025-05-11 18:49:47,453 - News Chatbot - INFO - Initial collection count: 0
+2025-05-11 18:49:47,513 - News Chatbot - INFO - Fetching articles from source: https://www.aljazeera.com/xml/rss/all.xml
+2025-05-11 18:49:48,105 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/opinions/2025/5/11/what-the-christians-of-the-holy-land-expect-from-pope-leo-xiv?traffic_source=rss
+2025-05-11 18:49:49,153 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/pope-leo-xiv-deeply-saddened-by-gaza-calls-for-aid-and-a-ceasefire?traffic_source=rss
+2025-05-11 18:49:49,552 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/iran-says-nuclear-enrichment-non-negotiable-before-us-talks-in-oman?traffic_source=rss
+2025-05-11 18:49:49,864 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/trump-offers-to-work-with-india-pakistan-on-kashmir?traffic_source=rss
+2025-05-11 18:49:50,323 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/heavy-rains-cause-flooding-in-somali-capital-killing-seven?traffic_source=rss
+2025-05-11 18:49:51,074 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/turkish-student-rumeysa-ozturk-says-she-will-continue-to-pursue-her-case?traffic_source=rss
+2025-05-11 18:49:52,072 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/bangladesh-bans-activities-of-awami-league-the-party-of-ousted-pm-hasina?traffic_source=rss
+2025-05-11 18:49:52,705 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/week-in-pictures-from-india-pakistan-fighting-to-v-e-day-anniversary?traffic_source=rss
+2025-05-11 18:49:53,913 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/features/longform/2025/5/11/resistance-and-extractivism-inside-carrara-italys-home-of-white-marble?traffic_source=rss
+2025-05-11 18:49:55,068 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/pinch-point/2025/5/11/the-race-for-rare-earths?traffic_source=rss
+2025-05-11 18:49:55,988 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/edwards-timberwolves-overcome-warriors-in-game-3-to-take-2-1-series-lead?traffic_source=rss
+2025-05-11 18:49:57,149 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/freed-turkish-student-rumeysa-ozturk-thanks-supporters-after-her-release?traffic_source=rss
+2025-05-11 18:49:57,524 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/quotable/2025/5/11/india-and-pakistan-are-keen-to-avoid-further?traffic_source=rss
+2025-05-11 18:49:59,433 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/difficult-ceasefire-guns-silent-but-will-the-india-pakistan-truce-hold?traffic_source=rss
+2025-05-11 18:50:00,499 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/albania-votes-in-general-elections-as-pm-edi-rama-seeks-a-fourth-term?traffic_source=rss
+2025-05-11 18:50:00,876 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/sri-lanka-bus-carrying-pilgrims-veers-off-cliff?traffic_source=rss
+2025-05-11 18:50:01,211 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/ufc-315-della-maddalena-defeats-muhammad-in-welterweight-title-fight?traffic_source=rss
+2025-05-11 18:50:01,641 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/putin-proposes-direct-russia-ukraine-talks-in-istanbul-on-may-15?traffic_source=rss
+2025-05-11 18:50:03,186 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/the-listening-post/2025/5/10/israel-capitalises-as-gaza-fatigue-sets-in?traffic_source=rss
+2025-05-11 18:50:03,832 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/inside-story/2025/5/10/will-the-truce-between-india-and-pakistan-resolve-differences-over-kashmir?traffic_source=rss
+2025-05-11 18:50:04,620 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/israeli-protesters-in-tel-aviv-demand-an-end-to-war-on-gaza?traffic_source=rss
+2025-05-11 18:50:05,524 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/newark-mayor-denies-trespassing-at-immigration-center-following-arrest?traffic_source=rss
+2025-05-11 18:50:08,050 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/10/barcelona-vs-real-madrid-ancelotti-coy-on-future-as-alonso-link-grows?traffic_source=rss
+2025-05-11 18:50:10,510 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/india-and-pakistan-agree-to-an-immediate-ceasefire-after-days-of-escalation?traffic_source=rss
+2025-05-11 18:50:10,925 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/at-least-33-killed-in-suspected-paramilitary-rsf-strikes-in-sudan?traffic_source=rss
+2025-05-11 18:50:10,925 - News Chatbot - INFO - Total articles fetched: 25
+2025-05-11 18:50:10,925 - News Chatbot - INFO - Fetched 25 articles
+2025-05-11 18:50:10,925 - News Chatbot - INFO - Cleared Redis database
+2025-05-11 18:50:10,925 - News Chatbot - INFO - 
+=== Processing article 1/25 ===
+2025-05-11 18:50:10,925 - News Chatbot - INFO - Title: What the Christians of the Holy Land expect from P...
+2025-05-11 18:50:10,925 - News Chatbot - DEBUG - Validated article: What the Christians of the Holy Land expect from Pope Leo XIV
+2025-05-11 18:50:10,925 - News Chatbot - DEBUG - Stored article metadata in Redis: article:0
+2025-05-11 18:50:10,925 - News Chatbot - DEBUG - Generating embedding for text (length: 353): We hope to see in the new pope a father who will stand by our side and protect us from oppression. M...
+2025-05-11 18:50:10,971 - News Chatbot - DEBUG - Embedding generated successfully, length: 384
+2025-05-11 18:50:52,250 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 18:50:54,276 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 18:50:54,996 - News Chatbot - INFO - ChromaDB client initialized successfully
+2025-05-11 18:50:55,007 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 18:50:55,611 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 18:50:55,619 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 18:51:00,032 - News Chatbot - INFO - Processing question: news about Pope Leo XIV
+2025-05-11 18:51:00,032 - News Chatbot - DEBUG - Generating embedding for text (length: 23): news about Pope Leo XIV...
+2025-05-11 18:51:00,071 - News Chatbot - DEBUG - Embedding generated successfully, length: 384
+2025-05-11 18:55:05,142 - News Chatbot - INFO - Loaded .env from: D:\Virafast\news-chatbot\.env
+2025-05-11 18:55:15,920 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 18:55:17,980 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 18:55:18,670 - News Chatbot - ERROR - Failed to initialize ChromaDB client: name 'os' is not defined
+2025-05-11 18:55:39,793 - News Chatbot - INFO - Loaded .env from: D:\Virafast\news-chatbot\.env
+2025-05-11 18:55:50,292 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 18:55:52,315 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 18:55:53,047 - News Chatbot - INFO - ChromaDB client initialized successfully
+2025-05-11 18:55:53,058 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 18:55:53,651 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 18:55:53,651 - News Chatbot - INFO - Starting news ingestion
+2025-05-11 18:55:53,651 - News Chatbot - INFO - Initializing Redis client...
+2025-05-11 18:55:55,694 - News Chatbot - INFO - Redis initialized successfully
+2025-05-11 18:55:55,695 - News Chatbot - INFO - Initializing ChromaDB collection...
+2025-05-11 18:55:55,738 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 18:55:55,738 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 18:55:55,749 - News Chatbot - INFO - Created ChromaDB collection 'news_articles'
+2025-05-11 18:55:55,749 - News Chatbot - INFO - Created new ChromaDB collection 'news_articles'
+2025-05-11 18:55:55,751 - News Chatbot - INFO - Initial collection count: 0
+2025-05-11 18:55:55,751 - News Chatbot - INFO - Fetching articles from source: https://www.aljazeera.com/xml/rss/all.xml
+2025-05-11 18:55:55,850 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/opinions/2025/5/11/what-the-christians-of-the-holy-land-expect-from-pope-leo-xiv?traffic_source=rss
+2025-05-11 18:55:55,850 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/pope-leo-xiv-deeply-saddened-by-gaza-calls-for-aid-and-a-ceasefire?traffic_source=rss
+2025-05-11 18:55:55,851 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/iran-says-nuclear-enrichment-non-negotiable-before-us-talks-in-oman?traffic_source=rss
+2025-05-11 18:55:55,851 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/trump-offers-to-work-with-india-pakistan-on-kashmir?traffic_source=rss
+2025-05-11 18:55:55,852 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/heavy-rains-cause-flooding-in-somali-capital-killing-seven?traffic_source=rss
+2025-05-11 18:55:55,853 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/turkish-student-rumeysa-ozturk-says-she-will-continue-to-pursue-her-case?traffic_source=rss
+2025-05-11 18:55:55,853 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/bangladesh-bans-activities-of-awami-league-the-party-of-ousted-pm-hasina?traffic_source=rss
+2025-05-11 18:55:55,853 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/week-in-pictures-from-india-pakistan-fighting-to-v-e-day-anniversary?traffic_source=rss
+2025-05-11 18:55:55,854 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/features/longform/2025/5/11/resistance-and-extractivism-inside-carrara-italys-home-of-white-marble?traffic_source=rss
+2025-05-11 18:55:55,854 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/pinch-point/2025/5/11/the-race-for-rare-earths?traffic_source=rss
+2025-05-11 18:55:55,854 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/edwards-timberwolves-overcome-warriors-in-game-3-to-take-2-1-series-lead?traffic_source=rss
+2025-05-11 18:55:55,854 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/freed-turkish-student-rumeysa-ozturk-thanks-supporters-after-her-release?traffic_source=rss
+2025-05-11 18:55:55,856 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/quotable/2025/5/11/india-and-pakistan-are-keen-to-avoid-further?traffic_source=rss
+2025-05-11 18:55:55,857 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/difficult-ceasefire-guns-silent-but-will-the-india-pakistan-truce-hold?traffic_source=rss
+2025-05-11 18:55:55,857 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/albania-votes-in-general-elections-as-pm-edi-rama-seeks-a-fourth-term?traffic_source=rss
+2025-05-11 18:55:55,857 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/sri-lanka-bus-carrying-pilgrims-veers-off-cliff?traffic_source=rss
+2025-05-11 18:55:55,857 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/ufc-315-della-maddalena-defeats-muhammad-in-welterweight-title-fight?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/putin-proposes-direct-russia-ukraine-talks-in-istanbul-on-may-15?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/the-listening-post/2025/5/10/israel-capitalises-as-gaza-fatigue-sets-in?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/inside-story/2025/5/10/will-the-truce-between-india-and-pakistan-resolve-differences-over-kashmir?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/israeli-protesters-in-tel-aviv-demand-an-end-to-war-on-gaza?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/newark-mayor-denies-trespassing-at-immigration-center-following-arrest?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/10/barcelona-vs-real-madrid-ancelotti-coy-on-future-as-alonso-link-grows?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/india-and-pakistan-agree-to-an-immediate-ceasefire-after-days-of-escalation?traffic_source=rss
+2025-05-11 18:55:55,858 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/at-least-33-killed-in-suspected-paramilitary-rsf-strikes-in-sudan?traffic_source=rss
+2025-05-11 18:55:55,861 - News Chatbot - INFO - Fetching articles from source: http://rss.cnn.com/rss/edition.rss
+2025-05-11 18:55:57,255 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Trump pleads not guilty to 34 felony counts', 'url': 'https://edition.cnn.com/webview/politics/live-news/trump-indictment-stormy-daniels-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:55:57,255 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/05/maggie-haberman-donald-trump-speech-indictment-reaction-sot-cnntm-vpx.cnn
+2025-05-11 18:55:57,255 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'What to know about the Trump indictment on the eve of his court appearance', 'url': 'https://www.cnn.com/collections/intl-trump-040223/', 'published_date': 'Wed, 05 Apr 2023 22:50:06 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:55:57,255 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'READ: Trump indictment related to hush money payment', 'url': 'https://cnn.it/411KYN7', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:55:57,255 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Russian authorities detain suspect over St. Petersburg cafe blast', 'url': 'https://edition.cnn.com/webview/europe/live-news/russia-ukraine-war-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:55:57,255 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/02/russian-military-blogger-vladlen-tatarsky-killed-cafe-explosion-chance-vpx.cnn
+2025-05-11 18:55:57,255 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Wall Street Journal reporter Evan Gershkovich appeals against arrest, Russian state media says', 'url': 'https://www.cnn.com/collections/intl-ukraine-030423/', 'published_date': 'Mon, 03 Apr 2023 13:58:58 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:55:57,257 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/politics/chinese-spy-balloon/index.html
+2025-05-11 18:55:57,257 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/asia/tsai-ing-wen-taiwan-mccarthy-meeting-analysis-intl-hnk/index.html
+2025-05-11 18:55:57,257 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/soldiers-russia-ukraine-war-david-mckenzie-pkg-ovn-intl-ldn-vpx.cnn
+2025-05-11 18:55:57,257 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/world/artemis-2-astronaut-crew-scn/index.html
+2025-05-11 18:55:57,259 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/french-minister-playboy-cover-intl/index.html
+2025-05-11 18:55:57,259 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/finland-prime-minister-sanna-marin-concedes-election-right-wing-party-wins-ovn-intl-ldn-vpx.cnn
+2025-05-11 18:55:57,259 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/investing/british-pound-currency-dollar/index.html
+2025-05-11 18:55:57,260 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/sanna-marin-finland-elections-concedes-intl/index.html
+2025-05-11 18:55:57,260 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Hundreds of millions at risk from Chinese shopping app malware', 'url': 'https://cnn.it/40OSomK', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:55:57,260 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/beauty-skincare-climate/index.html
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/nasal-vaccine-sterilizing-immunity/index.html
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/man-throws-yogurt-on-women-iran-president-raisi-hijab-is-law-nada-bashir-ovn-intl-ldn-vpx.cnn
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/israel-protests-military-veterans-intl-cmd/index.html
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/kurdish-kingmaker-turkish-elections-mime-intl/index.html
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/dogecoin-elon-musk-twitter/index.html
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/china-micron-probe-us-chip-war-intl-hnk/index.html
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/weather/2023/04/02/little-rock-arkansas-tornado-man-inside-van-cnntmw-vpx.cnn
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/china-renaissance-delays-results-missing-ceo-intl-hnk/index.html
+2025-05-11 18:55:57,261 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/business/hsbc-spin-off-hk-shareholder-meeting-intl-hnk/index.html
+2025-05-11 18:55:57,264 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/02/john-fetterman-depression-downward-spiral-acostanr-sot-vpx.cnn
+2025-05-11 18:55:57,265 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/premarket-stocks-trading/index.html
+2025-05-11 18:55:57,265 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/pet-cemeteries-burying-animals-history-tourigny/index.html
+2025-05-11 18:55:57,266 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/asia/deepest-fish-filmed-off-japan-scn-intl-hnk/index.html
+2025-05-11 18:55:57,266 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/energy/gas-prices-opec/index.html
+2025-05-11 18:55:57,266 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/03/31/israel-protests-rise-taxi-driver-attacked-robertson-pkg-intl-vpx.cnn
+2025-05-11 18:55:57,266 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/60-minutes-marjorie-taylor-greene-interview-obeidallah/index.html
+2025-05-11 18:55:57,267 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/new-big-5-wildlife-photography-book-c2e-scn-spc-intl/index.html
+2025-05-11 18:55:57,268 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/europe/germany-mayor-syrian-refugee-intl/index.html
+2025-05-11 18:55:57,268 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/autism-lithium-study/index.html
+2025-05-11 18:55:57,268 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/kwame-brathwaite-obituary-tan/index.html
+2025-05-11 18:55:57,268 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/haggis-scotland-secrets/index.html
+2025-05-11 18:55:57,269 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/twitter-blue-checks/index.html
+2025-05-11 18:55:57,270 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/travel/2023/04/03/snailfish-deepest-fish-on-camera-lon-orig-ao-cprog-scn.cnn
+2025-05-11 18:55:57,270 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/emma-willis-mabel-birthday-photos-intl-scli/index.html
+2025-05-11 18:55:57,270 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/lionel-messi-psg-whistles-fans-spt-intl/index.html
+2025-05-11 18:55:57,273 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/chelsea-graham-potter-manager-premier-league-spt-intl/index.html
+2025-05-11 18:55:57,273 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/media/2023/04/02/mark-hamill-star-wars-jim-acosta-skywalker-cprog-acostanr-vpx.cnn
+2025-05-11 18:55:57,273 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/angel-reese-gesture-caitlin-clark-lsu-iowa-spt-intl/index.html
+2025-05-11 18:55:57,274 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/summer-mcintosh-world-record-canada-swimmer-spt-intl/index.html
+2025-05-11 18:55:57,274 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/golf/rory-mcilroy-masters-meltdown-2011-spt-spc-intl/index.html
+2025-05-11 18:55:57,274 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/us/2023/03/31/snowboarder-rescue-mt-baker-washington-cprog-lon-orig-na.cnn
+2025-05-11 18:55:57,275 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/march-madness-championship-game-final-preview-spt-intl/index.html
+2025-05-11 18:55:57,275 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/shania-twain-equal-diversity/index.html
+2025-05-11 18:55:57,275 - News Chatbot - INFO - Total articles fetched: 69
+2025-05-11 18:55:57,275 - News Chatbot - INFO - Fetched 50 articles
+2025-05-11 18:55:57,277 - News Chatbot - INFO - Cleared Redis database
+2025-05-11 18:55:57,277 - News Chatbot - INFO - 
+=== Processing article 1/50 ===
+2025-05-11 18:55:57,277 - News Chatbot - INFO - Title: What the Christians of the Holy Land expect from P...
+2025-05-11 18:55:57,277 - News Chatbot - DEBUG - Validated article: What the Christians of the Holy Land expect from Pope Leo XIV
+2025-05-11 18:55:57,278 - News Chatbot - DEBUG - Stored article metadata in Redis: article:0
+2025-05-11 18:55:57,278 - News Chatbot - DEBUG - Generating embedding for text (length: 98): We hope to see in the new pope a father who will stand by our side and protect us from oppression....
+2025-05-11 18:55:57,308 - News Chatbot - DEBUG - Embedding generated successfully, length: 384
+2025-05-11 18:56:48,913 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 18:56:50,946 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 18:56:51,820 - News Chatbot - INFO - ChromaDB client initialized successfully
+2025-05-11 18:56:51,830 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 18:56:52,608 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 18:56:52,615 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 18:56:54,593 - News Chatbot - INFO - Processing question: news about Pope Leo XIV
+2025-05-11 18:56:54,593 - News Chatbot - DEBUG - Generating embedding for text (length: 23): news about Pope Leo XIV...
+2025-05-11 18:56:54,634 - News Chatbot - DEBUG - Embedding generated successfully, length: 384
+2025-05-11 18:59:13,986 - News Chatbot - INFO - Loaded .env from: D:\Virafast\news-chatbot\.env
+2025-05-11 18:59:24,261 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 18:59:26,311 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 18:59:27,040 - News Chatbot - INFO - ChromaDB client initialized successfully with persistence path: D:\Virafast\news-chatbot\scripts\chroma_db
+2025-05-11 18:59:27,040 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 18:59:27,711 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 18:59:27,711 - News Chatbot - INFO - Starting news ingestion
+2025-05-11 18:59:27,711 - News Chatbot - INFO - Initializing Redis client...
+2025-05-11 18:59:29,770 - News Chatbot - INFO - Redis initialized successfully
+2025-05-11 18:59:29,770 - News Chatbot - INFO - Initializing ChromaDB collection...
+2025-05-11 18:59:29,814 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 18:59:29,826 - News Chatbot - INFO - Created new ChromaDB collection 'news_articles'
+2025-05-11 18:59:29,827 - News Chatbot - INFO - Initial collection count: 0
+2025-05-11 18:59:29,829 - News Chatbot - INFO - Fetching articles from source: https://www.aljazeera.com/xml/rss/all.xml
+2025-05-11 18:59:30,032 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/opinions/2025/5/11/what-the-christians-of-the-holy-land-expect-from-pope-leo-xiv?traffic_source=rss
+2025-05-11 18:59:30,032 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/pope-leo-xiv-deeply-saddened-by-gaza-calls-for-aid-and-a-ceasefire?traffic_source=rss
+2025-05-11 18:59:30,032 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/iran-says-nuclear-enrichment-non-negotiable-before-us-talks-in-oman?traffic_source=rss
+2025-05-11 18:59:30,032 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/trump-offers-to-work-with-india-pakistan-on-kashmir?traffic_source=rss
+2025-05-11 18:59:30,041 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/heavy-rains-cause-flooding-in-somali-capital-killing-seven?traffic_source=rss
+2025-05-11 18:59:30,041 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/turkish-student-rumeysa-ozturk-says-she-will-continue-to-pursue-her-case?traffic_source=rss
+2025-05-11 18:59:30,041 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/bangladesh-bans-activities-of-awami-league-the-party-of-ousted-pm-hasina?traffic_source=rss
+2025-05-11 18:59:30,042 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/week-in-pictures-from-india-pakistan-fighting-to-v-e-day-anniversary?traffic_source=rss
+2025-05-11 18:59:30,042 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/features/longform/2025/5/11/resistance-and-extractivism-inside-carrara-italys-home-of-white-marble?traffic_source=rss
+2025-05-11 18:59:30,043 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/pinch-point/2025/5/11/the-race-for-rare-earths?traffic_source=rss
+2025-05-11 18:59:30,043 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/edwards-timberwolves-overcome-warriors-in-game-3-to-take-2-1-series-lead?traffic_source=rss
+2025-05-11 18:59:30,043 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/freed-turkish-student-rumeysa-ozturk-thanks-supporters-after-her-release?traffic_source=rss
+2025-05-11 18:59:30,043 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/quotable/2025/5/11/india-and-pakistan-are-keen-to-avoid-further?traffic_source=rss
+2025-05-11 18:59:30,044 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/difficult-ceasefire-guns-silent-but-will-the-india-pakistan-truce-hold?traffic_source=rss
+2025-05-11 18:59:30,045 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/albania-votes-in-general-elections-as-pm-edi-rama-seeks-a-fourth-term?traffic_source=rss
+2025-05-11 18:59:30,045 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/sri-lanka-bus-carrying-pilgrims-veers-off-cliff?traffic_source=rss
+2025-05-11 18:59:30,045 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/ufc-315-della-maddalena-defeats-muhammad-in-welterweight-title-fight?traffic_source=rss
+2025-05-11 18:59:30,045 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/putin-proposes-direct-russia-ukraine-talks-in-istanbul-on-may-15?traffic_source=rss
+2025-05-11 18:59:30,045 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/the-listening-post/2025/5/10/israel-capitalises-as-gaza-fatigue-sets-in?traffic_source=rss
+2025-05-11 18:59:30,045 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/inside-story/2025/5/10/will-the-truce-between-india-and-pakistan-resolve-differences-over-kashmir?traffic_source=rss
+2025-05-11 18:59:30,048 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/israeli-protesters-in-tel-aviv-demand-an-end-to-war-on-gaza?traffic_source=rss
+2025-05-11 18:59:30,048 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/newark-mayor-denies-trespassing-at-immigration-center-following-arrest?traffic_source=rss
+2025-05-11 18:59:30,048 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/10/barcelona-vs-real-madrid-ancelotti-coy-on-future-as-alonso-link-grows?traffic_source=rss
+2025-05-11 18:59:30,049 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/india-and-pakistan-agree-to-an-immediate-ceasefire-after-days-of-escalation?traffic_source=rss
+2025-05-11 18:59:30,049 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/at-least-33-killed-in-suspected-paramilitary-rsf-strikes-in-sudan?traffic_source=rss
+2025-05-11 18:59:30,049 - News Chatbot - INFO - Fetching articles from source: http://rss.cnn.com/rss/edition.rss
+2025-05-11 18:59:31,195 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Trump pleads not guilty to 34 felony counts', 'url': 'https://edition.cnn.com/webview/politics/live-news/trump-indictment-stormy-daniels-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:59:31,195 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/05/maggie-haberman-donald-trump-speech-indictment-reaction-sot-cnntm-vpx.cnn
+2025-05-11 18:59:31,195 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'What to know about the Trump indictment on the eve of his court appearance', 'url': 'https://www.cnn.com/collections/intl-trump-040223/', 'published_date': 'Wed, 05 Apr 2023 22:50:06 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:59:31,195 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'READ: Trump indictment related to hush money payment', 'url': 'https://cnn.it/411KYN7', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:59:31,196 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Russian authorities detain suspect over St. Petersburg cafe blast', 'url': 'https://edition.cnn.com/webview/europe/live-news/russia-ukraine-war-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:59:31,196 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/02/russian-military-blogger-vladlen-tatarsky-killed-cafe-explosion-chance-vpx.cnn
+2025-05-11 18:59:31,196 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Wall Street Journal reporter Evan Gershkovich appeals against arrest, Russian state media says', 'url': 'https://www.cnn.com/collections/intl-ukraine-030423/', 'published_date': 'Mon, 03 Apr 2023 13:58:58 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:59:31,198 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/politics/chinese-spy-balloon/index.html
+2025-05-11 18:59:31,198 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/asia/tsai-ing-wen-taiwan-mccarthy-meeting-analysis-intl-hnk/index.html
+2025-05-11 18:59:31,198 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/soldiers-russia-ukraine-war-david-mckenzie-pkg-ovn-intl-ldn-vpx.cnn
+2025-05-11 18:59:31,199 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/world/artemis-2-astronaut-crew-scn/index.html
+2025-05-11 18:59:31,199 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/french-minister-playboy-cover-intl/index.html
+2025-05-11 18:59:31,199 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/finland-prime-minister-sanna-marin-concedes-election-right-wing-party-wins-ovn-intl-ldn-vpx.cnn
+2025-05-11 18:59:31,199 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/investing/british-pound-currency-dollar/index.html
+2025-05-11 18:59:31,200 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/sanna-marin-finland-elections-concedes-intl/index.html
+2025-05-11 18:59:31,200 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Hundreds of millions at risk from Chinese shopping app malware', 'url': 'https://cnn.it/40OSomK', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/beauty-skincare-climate/index.html
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/nasal-vaccine-sterilizing-immunity/index.html
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/man-throws-yogurt-on-women-iran-president-raisi-hijab-is-law-nada-bashir-ovn-intl-ldn-vpx.cnn
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/israel-protests-military-veterans-intl-cmd/index.html
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/kurdish-kingmaker-turkish-elections-mime-intl/index.html
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/dogecoin-elon-musk-twitter/index.html
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/china-micron-probe-us-chip-war-intl-hnk/index.html
+2025-05-11 18:59:31,201 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/weather/2023/04/02/little-rock-arkansas-tornado-man-inside-van-cnntmw-vpx.cnn
+2025-05-11 18:59:31,204 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/china-renaissance-delays-results-missing-ceo-intl-hnk/index.html
+2025-05-11 18:59:31,204 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/business/hsbc-spin-off-hk-shareholder-meeting-intl-hnk/index.html
+2025-05-11 18:59:31,204 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/02/john-fetterman-depression-downward-spiral-acostanr-sot-vpx.cnn
+2025-05-11 18:59:31,204 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/premarket-stocks-trading/index.html
+2025-05-11 18:59:31,205 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/pet-cemeteries-burying-animals-history-tourigny/index.html
+2025-05-11 18:59:31,205 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/asia/deepest-fish-filmed-off-japan-scn-intl-hnk/index.html
+2025-05-11 18:59:31,205 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/energy/gas-prices-opec/index.html
+2025-05-11 18:59:31,205 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/03/31/israel-protests-rise-taxi-driver-attacked-robertson-pkg-intl-vpx.cnn
+2025-05-11 18:59:31,205 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/60-minutes-marjorie-taylor-greene-interview-obeidallah/index.html
+2025-05-11 18:59:31,207 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/new-big-5-wildlife-photography-book-c2e-scn-spc-intl/index.html
+2025-05-11 18:59:31,207 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/europe/germany-mayor-syrian-refugee-intl/index.html
+2025-05-11 18:59:31,207 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/autism-lithium-study/index.html
+2025-05-11 18:59:31,207 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/kwame-brathwaite-obituary-tan/index.html
+2025-05-11 18:59:31,209 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/haggis-scotland-secrets/index.html
+2025-05-11 18:59:31,209 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/twitter-blue-checks/index.html
+2025-05-11 18:59:31,209 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/travel/2023/04/03/snailfish-deepest-fish-on-camera-lon-orig-ao-cprog-scn.cnn
+2025-05-11 18:59:31,209 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/emma-willis-mabel-birthday-photos-intl-scli/index.html
+2025-05-11 18:59:31,209 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/lionel-messi-psg-whistles-fans-spt-intl/index.html
+2025-05-11 18:59:31,209 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/chelsea-graham-potter-manager-premier-league-spt-intl/index.html
+2025-05-11 18:59:31,209 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/media/2023/04/02/mark-hamill-star-wars-jim-acosta-skywalker-cprog-acostanr-vpx.cnn
+2025-05-11 18:59:31,211 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/angel-reese-gesture-caitlin-clark-lsu-iowa-spt-intl/index.html
+2025-05-11 18:59:31,211 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/summer-mcintosh-world-record-canada-swimmer-spt-intl/index.html
+2025-05-11 18:59:31,211 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/golf/rory-mcilroy-masters-meltdown-2011-spt-spc-intl/index.html
+2025-05-11 18:59:31,212 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/us/2023/03/31/snowboarder-rescue-mt-baker-washington-cprog-lon-orig-na.cnn
+2025-05-11 18:59:31,212 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/march-madness-championship-game-final-preview-spt-intl/index.html
+2025-05-11 18:59:31,213 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/shania-twain-equal-diversity/index.html
+2025-05-11 18:59:31,214 - News Chatbot - INFO - Total articles fetched: 69
+2025-05-11 18:59:31,215 - News Chatbot - INFO - Fetched 50 articles
+2025-05-11 18:59:31,215 - News Chatbot - INFO - Cleared Redis database
+2025-05-11 18:59:31,215 - News Chatbot - INFO - 
+=== Processing article 1/50 ===
+2025-05-11 18:59:31,215 - News Chatbot - INFO - Title: What the Christians of the Holy Land expect from P...
+2025-05-11 18:59:31,215 - News Chatbot - DEBUG - Validated article: What the Christians of the Holy Land expect from Pope Leo XIV
+2025-05-11 18:59:31,215 - News Chatbot - DEBUG - Stored article metadata in Redis: article:0
+2025-05-11 19:00:07,645 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 19:00:09,668 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 19:00:10,587 - News Chatbot - INFO - ChromaDB client initialized successfully with persistence path: D:\Virafast\news-chatbot\scripts\chroma_db
+2025-05-11 19:00:10,587 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 19:00:11,347 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 19:00:11,347 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 19:00:12,505 - News Chatbot - ERROR - Unexpected error: 
+2025-05-11 19:00:15,121 - News Chatbot - INFO - Processing question: news about Pope Leo XIV
+2025-05-11 19:05:23,632 - News Chatbot - INFO - Loaded .env from: D:\Virafast\news-chatbot\.env
+2025-05-11 19:05:33,716 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 19:05:35,764 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 19:05:36,531 - News Chatbot - INFO - ChromaDB client initialized successfully with persistence path: D:\Virafast\news-chatbot\scripts\chroma_db
+2025-05-11 19:05:37,199 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 19:05:37,199 - News Chatbot - INFO - Starting news ingestion
+2025-05-11 19:05:37,199 - News Chatbot - INFO - Initializing Redis client...
+2025-05-11 19:05:39,229 - News Chatbot - INFO - Redis initialized successfully
+2025-05-11 19:05:39,229 - News Chatbot - INFO - Initializing ChromaDB collection...
+2025-05-11 19:05:39,273 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 19:05:39,286 - News Chatbot - INFO - Created new ChromaDB collection 'news_articles'
+2025-05-11 19:05:39,288 - News Chatbot - INFO - Initial collection count: 0
+2025-05-11 19:05:39,288 - News Chatbot - INFO - Fetching articles from source: https://www.aljazeera.com/xml/rss/all.xml
+2025-05-11 19:05:39,432 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/pope-leo-xiv-calls-for-gaza-ceasefire-in-first-sunday-message?traffic_source=rss
+2025-05-11 19:05:39,432 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/opinions/2025/5/11/what-the-christians-of-the-holy-land-expect-from-pope-leo-xiv?traffic_source=rss
+2025-05-11 19:05:39,432 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/pope-leo-xiv-deeply-saddened-by-gaza-calls-for-aid-and-a-ceasefire?traffic_source=rss
+2025-05-11 19:05:39,432 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/iran-says-nuclear-enrichment-non-negotiable-before-us-talks-in-oman?traffic_source=rss
+2025-05-11 19:05:39,435 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/trump-offers-to-work-with-india-pakistan-on-kashmir?traffic_source=rss
+2025-05-11 19:05:39,435 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/heavy-rains-cause-flooding-in-somali-capital-killing-seven?traffic_source=rss
+2025-05-11 19:05:39,435 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/turkish-student-rumeysa-ozturk-says-she-will-continue-to-pursue-her-case?traffic_source=rss
+2025-05-11 19:05:39,437 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/bangladesh-bans-activities-of-awami-league-the-party-of-ousted-pm-hasina?traffic_source=rss
+2025-05-11 19:05:39,437 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/week-in-pictures-from-india-pakistan-fighting-to-v-e-day-anniversary?traffic_source=rss
+2025-05-11 19:05:39,437 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/features/longform/2025/5/11/resistance-and-extractivism-inside-carrara-italys-home-of-white-marble?traffic_source=rss
+2025-05-11 19:05:39,437 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/pinch-point/2025/5/11/the-race-for-rare-earths?traffic_source=rss
+2025-05-11 19:05:39,437 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/edwards-timberwolves-overcome-warriors-in-game-3-to-take-2-1-series-lead?traffic_source=rss
+2025-05-11 19:05:39,437 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/freed-turkish-student-rumeysa-ozturk-thanks-supporters-after-her-release?traffic_source=rss
+2025-05-11 19:05:39,437 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/quotable/2025/5/11/india-and-pakistan-are-keen-to-avoid-further?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/difficult-ceasefire-guns-silent-but-will-the-india-pakistan-truce-hold?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/albania-votes-in-general-elections-as-pm-edi-rama-seeks-a-fourth-term?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/sri-lanka-bus-carrying-pilgrims-veers-off-cliff?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/ufc-315-della-maddalena-defeats-muhammad-in-welterweight-title-fight?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/putin-proposes-direct-russia-ukraine-talks-in-istanbul-on-may-15?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/the-listening-post/2025/5/10/israel-capitalises-as-gaza-fatigue-sets-in?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/inside-story/2025/5/10/will-the-truce-between-india-and-pakistan-resolve-differences-over-kashmir?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/israeli-protesters-in-tel-aviv-demand-an-end-to-war-on-gaza?traffic_source=rss
+2025-05-11 19:05:39,440 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/newark-mayor-denies-trespassing-at-immigration-center-following-arrest?traffic_source=rss
+2025-05-11 19:05:39,444 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/10/barcelona-vs-real-madrid-ancelotti-coy-on-future-as-alonso-link-grows?traffic_source=rss
+2025-05-11 19:05:39,444 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/india-and-pakistan-agree-to-an-immediate-ceasefire-after-days-of-escalation?traffic_source=rss
+2025-05-11 19:05:39,444 - News Chatbot - INFO - Fetching articles from source: http://rss.cnn.com/rss/edition.rss
+2025-05-11 19:05:40,623 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Trump pleads not guilty to 34 felony counts', 'url': 'https://edition.cnn.com/webview/politics/live-news/trump-indictment-stormy-daniels-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:05:40,623 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/05/maggie-haberman-donald-trump-speech-indictment-reaction-sot-cnntm-vpx.cnn
+2025-05-11 19:05:40,623 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'What to know about the Trump indictment on the eve of his court appearance', 'url': 'https://www.cnn.com/collections/intl-trump-040223/', 'published_date': 'Wed, 05 Apr 2023 22:50:06 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:05:40,623 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'READ: Trump indictment related to hush money payment', 'url': 'https://cnn.it/411KYN7', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:05:40,623 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Russian authorities detain suspect over St. Petersburg cafe blast', 'url': 'https://edition.cnn.com/webview/europe/live-news/russia-ukraine-war-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:05:40,623 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/02/russian-military-blogger-vladlen-tatarsky-killed-cafe-explosion-chance-vpx.cnn
+2025-05-11 19:05:40,623 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Wall Street Journal reporter Evan Gershkovich appeals against arrest, Russian state media says', 'url': 'https://www.cnn.com/collections/intl-ukraine-030423/', 'published_date': 'Mon, 03 Apr 2023 13:58:58 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:05:40,623 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/politics/chinese-spy-balloon/index.html
+2025-05-11 19:05:40,623 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/asia/tsai-ing-wen-taiwan-mccarthy-meeting-analysis-intl-hnk/index.html
+2025-05-11 19:05:40,623 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/soldiers-russia-ukraine-war-david-mckenzie-pkg-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/world/artemis-2-astronaut-crew-scn/index.html
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/french-minister-playboy-cover-intl/index.html
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/finland-prime-minister-sanna-marin-concedes-election-right-wing-party-wins-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/investing/british-pound-currency-dollar/index.html
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/sanna-marin-finland-elections-concedes-intl/index.html
+2025-05-11 19:05:40,630 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Hundreds of millions at risk from Chinese shopping app malware', 'url': 'https://cnn.it/40OSomK', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/beauty-skincare-climate/index.html
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/nasal-vaccine-sterilizing-immunity/index.html
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/man-throws-yogurt-on-women-iran-president-raisi-hijab-is-law-nada-bashir-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/israel-protests-military-veterans-intl-cmd/index.html
+2025-05-11 19:05:40,630 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/kurdish-kingmaker-turkish-elections-mime-intl/index.html
+2025-05-11 19:05:40,633 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/dogecoin-elon-musk-twitter/index.html
+2025-05-11 19:05:40,633 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/china-micron-probe-us-chip-war-intl-hnk/index.html
+2025-05-11 19:05:40,633 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/weather/2023/04/02/little-rock-arkansas-tornado-man-inside-van-cnntmw-vpx.cnn
+2025-05-11 19:05:40,633 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/china-renaissance-delays-results-missing-ceo-intl-hnk/index.html
+2025-05-11 19:05:40,633 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/business/hsbc-spin-off-hk-shareholder-meeting-intl-hnk/index.html
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/02/john-fetterman-depression-downward-spiral-acostanr-sot-vpx.cnn
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/premarket-stocks-trading/index.html
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/pet-cemeteries-burying-animals-history-tourigny/index.html
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/asia/deepest-fish-filmed-off-japan-scn-intl-hnk/index.html
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/energy/gas-prices-opec/index.html
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/03/31/israel-protests-rise-taxi-driver-attacked-robertson-pkg-intl-vpx.cnn
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/60-minutes-marjorie-taylor-greene-interview-obeidallah/index.html
+2025-05-11 19:05:40,635 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/new-big-5-wildlife-photography-book-c2e-scn-spc-intl/index.html
+2025-05-11 19:05:40,637 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/europe/germany-mayor-syrian-refugee-intl/index.html
+2025-05-11 19:05:40,637 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/autism-lithium-study/index.html
+2025-05-11 19:05:40,637 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/kwame-brathwaite-obituary-tan/index.html
+2025-05-11 19:05:40,637 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/haggis-scotland-secrets/index.html
+2025-05-11 19:05:40,638 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/twitter-blue-checks/index.html
+2025-05-11 19:05:40,638 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/travel/2023/04/03/snailfish-deepest-fish-on-camera-lon-orig-ao-cprog-scn.cnn
+2025-05-11 19:05:40,638 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/emma-willis-mabel-birthday-photos-intl-scli/index.html
+2025-05-11 19:05:40,638 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/lionel-messi-psg-whistles-fans-spt-intl/index.html
+2025-05-11 19:05:40,638 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/chelsea-graham-potter-manager-premier-league-spt-intl/index.html
+2025-05-11 19:05:40,638 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/media/2023/04/02/mark-hamill-star-wars-jim-acosta-skywalker-cprog-acostanr-vpx.cnn
+2025-05-11 19:05:40,638 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/angel-reese-gesture-caitlin-clark-lsu-iowa-spt-intl/index.html
+2025-05-11 19:05:40,640 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/summer-mcintosh-world-record-canada-swimmer-spt-intl/index.html
+2025-05-11 19:05:40,641 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/golf/rory-mcilroy-masters-meltdown-2011-spt-spc-intl/index.html
+2025-05-11 19:05:40,641 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/us/2023/03/31/snowboarder-rescue-mt-baker-washington-cprog-lon-orig-na.cnn
+2025-05-11 19:05:40,641 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/march-madness-championship-game-final-preview-spt-intl/index.html
+2025-05-11 19:05:40,641 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/shania-twain-equal-diversity/index.html
+2025-05-11 19:05:40,642 - News Chatbot - INFO - Total articles fetched: 69
+2025-05-11 19:05:40,642 - News Chatbot - INFO - Fetched 50 articles
+2025-05-11 19:05:40,644 - News Chatbot - INFO - Cleared Redis database
+2025-05-11 19:05:40,644 - News Chatbot - INFO - 
+=== Processing article 1/50 ===
+2025-05-11 19:05:40,644 - News Chatbot - INFO - Title: Pope Leo XIV calls for Gaza ceasefire in first Sun...
+2025-05-11 19:05:40,644 - News Chatbot - DEBUG - Validated article: Pope Leo XIV calls for Gaza ceasefire in first Sunday message
+2025-05-11 19:05:40,645 - News Chatbot - DEBUG - Stored article metadata in Redis: article:0
+2025-05-11 19:06:04,963 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 19:06:07,016 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 19:06:07,815 - News Chatbot - INFO - ChromaDB client initialized successfully with persistence path: D:\Virafast\news-chatbot\scripts\chroma_db
+2025-05-11 19:06:08,454 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 19:06:08,457 - News Chatbot - INFO - RAGService initialized with ChromaDB collection
+2025-05-11 19:06:13,526 - News Chatbot - INFO - Processing question: news about Pope Leo XIV
+2025-05-11 19:06:13,528 - News Chatbot - DEBUG - Generating embedding for query: news about Pope Leo XIV
+2025-05-11 19:06:13,566 - News Chatbot - DEBUG - Querying ChromaDB with top_k=3
+2025-05-11 19:36:52,350 - News Chatbot - INFO - Loaded .env from: D:\Virafast\news-chatbot\.env
+2025-05-11 19:37:09,880 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 19:37:11,895 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 19:37:13,436 - News Chatbot - INFO - ChromaDB client initialized successfully with persistence path: D:\Virafast\news-chatbot\scripts\chroma_db
+2025-05-11 19:37:14,631 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 19:37:14,631 - News Chatbot - INFO - Starting news ingestion
+2025-05-11 19:37:14,631 - News Chatbot - INFO - Initializing Redis client...
+2025-05-11 19:37:16,655 - News Chatbot - INFO - Redis initialized successfully
+2025-05-11 19:37:16,655 - News Chatbot - INFO - Initializing ChromaDB collection...
+2025-05-11 19:37:16,707 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 19:37:16,732 - News Chatbot - INFO - Created new ChromaDB collection 'news_articles'
+2025-05-11 19:37:16,739 - News Chatbot - INFO - Initial collection count: 0
+2025-05-11 19:37:16,740 - News Chatbot - INFO - Fetching articles from source: https://www.aljazeera.com/xml/rss/all.xml
+2025-05-11 19:37:16,943 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/putin-proposes-ukraine-peace-talks-after-western-leaders-threaten-sanctions?traffic_source=rss
+2025-05-11 19:37:16,943 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/pope-leo-xiv-calls-for-gaza-ceasefire-in-first-sunday-message?traffic_source=rss
+2025-05-11 19:37:16,944 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/opinions/2025/5/11/what-the-christians-of-the-holy-land-expect-from-pope-leo-xiv?traffic_source=rss
+2025-05-11 19:37:16,944 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/pope-leo-xiv-deeply-saddened-by-gaza-calls-for-aid-and-a-ceasefire?traffic_source=rss
+2025-05-11 19:37:16,944 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/iran-says-nuclear-enrichment-non-negotiable-before-us-talks-in-oman?traffic_source=rss
+2025-05-11 19:37:16,947 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/trump-offers-to-work-with-india-pakistan-on-kashmir?traffic_source=rss
+2025-05-11 19:37:16,947 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/heavy-rains-cause-flooding-in-somali-capital-killing-seven?traffic_source=rss
+2025-05-11 19:37:16,948 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/turkish-student-rumeysa-ozturk-says-she-will-continue-to-pursue-her-case?traffic_source=rss
+2025-05-11 19:37:16,948 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/bangladesh-bans-activities-of-awami-league-the-party-of-ousted-pm-hasina?traffic_source=rss
+2025-05-11 19:37:16,948 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/week-in-pictures-from-india-pakistan-fighting-to-v-e-day-anniversary?traffic_source=rss
+2025-05-11 19:37:16,950 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/features/longform/2025/5/11/resistance-and-extractivism-inside-carrara-italys-home-of-white-marble?traffic_source=rss
+2025-05-11 19:37:16,950 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/pinch-point/2025/5/11/the-race-for-rare-earths?traffic_source=rss
+2025-05-11 19:37:16,952 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/edwards-timberwolves-overcome-warriors-in-game-3-to-take-2-1-series-lead?traffic_source=rss
+2025-05-11 19:37:16,952 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/freed-turkish-student-rumeysa-ozturk-thanks-supporters-after-her-release?traffic_source=rss
+2025-05-11 19:37:16,954 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/quotable/2025/5/11/india-and-pakistan-are-keen-to-avoid-further?traffic_source=rss
+2025-05-11 19:37:16,954 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/difficult-ceasefire-guns-silent-but-will-the-india-pakistan-truce-hold?traffic_source=rss
+2025-05-11 19:37:16,954 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/albania-votes-in-general-elections-as-pm-edi-rama-seeks-a-fourth-term?traffic_source=rss
+2025-05-11 19:37:16,954 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/sri-lanka-bus-carrying-pilgrims-veers-off-cliff?traffic_source=rss
+2025-05-11 19:37:16,956 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/ufc-315-della-maddalena-defeats-muhammad-in-welterweight-title-fight?traffic_source=rss
+2025-05-11 19:37:16,956 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/putin-proposes-direct-russia-ukraine-talks-in-istanbul-on-may-15?traffic_source=rss
+2025-05-11 19:37:16,958 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/the-listening-post/2025/5/10/israel-capitalises-as-gaza-fatigue-sets-in?traffic_source=rss
+2025-05-11 19:37:16,958 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/inside-story/2025/5/10/will-the-truce-between-india-and-pakistan-resolve-differences-over-kashmir?traffic_source=rss
+2025-05-11 19:37:16,958 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/israeli-protesters-in-tel-aviv-demand-an-end-to-war-on-gaza?traffic_source=rss
+2025-05-11 19:37:16,958 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/newark-mayor-denies-trespassing-at-immigration-center-following-arrest?traffic_source=rss
+2025-05-11 19:37:16,960 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/10/barcelona-vs-real-madrid-ancelotti-coy-on-future-as-alonso-link-grows?traffic_source=rss
+2025-05-11 19:37:16,960 - News Chatbot - INFO - Fetching articles from source: http://rss.cnn.com/rss/edition.rss
+2025-05-11 19:37:17,917 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Trump pleads not guilty to 34 felony counts', 'url': 'https://edition.cnn.com/webview/politics/live-news/trump-indictment-stormy-daniels-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:37:17,918 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/05/maggie-haberman-donald-trump-speech-indictment-reaction-sot-cnntm-vpx.cnn
+2025-05-11 19:37:17,918 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'What to know about the Trump indictment on the eve of his court appearance', 'url': 'https://www.cnn.com/collections/intl-trump-040223/', 'published_date': 'Wed, 05 Apr 2023 22:50:06 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:37:17,920 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'READ: Trump indictment related to hush money payment', 'url': 'https://cnn.it/411KYN7', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:37:17,920 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Russian authorities detain suspect over St. Petersburg cafe blast', 'url': 'https://edition.cnn.com/webview/europe/live-news/russia-ukraine-war-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:37:17,921 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/02/russian-military-blogger-vladlen-tatarsky-killed-cafe-explosion-chance-vpx.cnn
+2025-05-11 19:37:17,921 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Wall Street Journal reporter Evan Gershkovich appeals against arrest, Russian state media says', 'url': 'https://www.cnn.com/collections/intl-ukraine-030423/', 'published_date': 'Mon, 03 Apr 2023 13:58:58 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:37:17,922 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/politics/chinese-spy-balloon/index.html
+2025-05-11 19:37:17,923 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/asia/tsai-ing-wen-taiwan-mccarthy-meeting-analysis-intl-hnk/index.html
+2025-05-11 19:37:17,923 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/soldiers-russia-ukraine-war-david-mckenzie-pkg-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:37:17,924 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/world/artemis-2-astronaut-crew-scn/index.html
+2025-05-11 19:37:17,925 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/french-minister-playboy-cover-intl/index.html
+2025-05-11 19:37:17,926 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/finland-prime-minister-sanna-marin-concedes-election-right-wing-party-wins-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:37:17,926 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/investing/british-pound-currency-dollar/index.html
+2025-05-11 19:37:17,928 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/sanna-marin-finland-elections-concedes-intl/index.html
+2025-05-11 19:37:17,928 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Hundreds of millions at risk from Chinese shopping app malware', 'url': 'https://cnn.it/40OSomK', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:37:17,929 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/beauty-skincare-climate/index.html
+2025-05-11 19:37:17,929 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/nasal-vaccine-sterilizing-immunity/index.html
+2025-05-11 19:37:17,929 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/man-throws-yogurt-on-women-iran-president-raisi-hijab-is-law-nada-bashir-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:37:17,931 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/israel-protests-military-veterans-intl-cmd/index.html
+2025-05-11 19:37:17,932 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/kurdish-kingmaker-turkish-elections-mime-intl/index.html
+2025-05-11 19:37:17,933 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/dogecoin-elon-musk-twitter/index.html
+2025-05-11 19:37:17,934 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/china-micron-probe-us-chip-war-intl-hnk/index.html
+2025-05-11 19:37:17,935 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/weather/2023/04/02/little-rock-arkansas-tornado-man-inside-van-cnntmw-vpx.cnn
+2025-05-11 19:37:17,936 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/china-renaissance-delays-results-missing-ceo-intl-hnk/index.html
+2025-05-11 19:37:17,936 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/business/hsbc-spin-off-hk-shareholder-meeting-intl-hnk/index.html
+2025-05-11 19:37:17,937 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/02/john-fetterman-depression-downward-spiral-acostanr-sot-vpx.cnn
+2025-05-11 19:37:17,938 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/premarket-stocks-trading/index.html
+2025-05-11 19:37:17,938 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/pet-cemeteries-burying-animals-history-tourigny/index.html
+2025-05-11 19:37:17,939 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/asia/deepest-fish-filmed-off-japan-scn-intl-hnk/index.html
+2025-05-11 19:37:17,940 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/energy/gas-prices-opec/index.html
+2025-05-11 19:37:17,941 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/03/31/israel-protests-rise-taxi-driver-attacked-robertson-pkg-intl-vpx.cnn
+2025-05-11 19:37:17,941 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/60-minutes-marjorie-taylor-greene-interview-obeidallah/index.html
+2025-05-11 19:37:17,942 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/new-big-5-wildlife-photography-book-c2e-scn-spc-intl/index.html
+2025-05-11 19:37:17,942 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/europe/germany-mayor-syrian-refugee-intl/index.html
+2025-05-11 19:37:17,943 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/autism-lithium-study/index.html
+2025-05-11 19:37:17,944 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/kwame-brathwaite-obituary-tan/index.html
+2025-05-11 19:37:17,945 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/haggis-scotland-secrets/index.html
+2025-05-11 19:37:17,945 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/twitter-blue-checks/index.html
+2025-05-11 19:37:17,946 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/travel/2023/04/03/snailfish-deepest-fish-on-camera-lon-orig-ao-cprog-scn.cnn
+2025-05-11 19:37:17,947 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/emma-willis-mabel-birthday-photos-intl-scli/index.html
+2025-05-11 19:37:17,947 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/lionel-messi-psg-whistles-fans-spt-intl/index.html
+2025-05-11 19:37:17,948 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/chelsea-graham-potter-manager-premier-league-spt-intl/index.html
+2025-05-11 19:37:17,949 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/media/2023/04/02/mark-hamill-star-wars-jim-acosta-skywalker-cprog-acostanr-vpx.cnn
+2025-05-11 19:37:17,950 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/angel-reese-gesture-caitlin-clark-lsu-iowa-spt-intl/index.html
+2025-05-11 19:37:17,951 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/summer-mcintosh-world-record-canada-swimmer-spt-intl/index.html
+2025-05-11 19:37:17,951 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/golf/rory-mcilroy-masters-meltdown-2011-spt-spc-intl/index.html
+2025-05-11 19:37:17,952 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/us/2023/03/31/snowboarder-rescue-mt-baker-washington-cprog-lon-orig-na.cnn
+2025-05-11 19:37:17,953 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/march-madness-championship-game-final-preview-spt-intl/index.html
+2025-05-11 19:37:17,954 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/shania-twain-equal-diversity/index.html
+2025-05-11 19:37:17,955 - News Chatbot - INFO - Total articles fetched: 69
+2025-05-11 19:37:17,956 - News Chatbot - INFO - Fetched 50 articles
+2025-05-11 19:37:17,968 - News Chatbot - INFO - Cleared Redis database
+2025-05-11 19:37:17,968 - News Chatbot - INFO - 
+=== Processing article 1/50 ===
+2025-05-11 19:37:17,968 - News Chatbot - INFO - Title: Putin proposes Ukraine peace talks after Western l...
+2025-05-11 19:37:17,968 - News Chatbot - DEBUG - Validated article: Putin proposes Ukraine peace talks after Western leaders threaten sanctions
+2025-05-11 19:37:17,968 - News Chatbot - DEBUG - Stored article metadata in Redis: article:0
+2025-05-11 19:41:34,189 - News Chatbot - INFO - Loaded .env from: D:\Virafast\news-chatbot\.env
+2025-05-11 19:41:46,489 - News Chatbot - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-05-11 19:41:48,524 - News Chatbot - INFO - Redis client initialized successfully
+2025-05-11 19:41:49,427 - News Chatbot - INFO - ChromaDB client initialized successfully with persistence path: D:\Virafast\news-chatbot\scripts\chroma_db
+2025-05-11 19:41:50,225 - News Chatbot - INFO - Gemini API configured successfully
+2025-05-11 19:41:50,226 - News Chatbot - INFO - Starting news ingestion
+2025-05-11 19:41:50,226 - News Chatbot - INFO - Initializing Redis client...
+2025-05-11 19:41:52,260 - News Chatbot - INFO - Redis initialized successfully
+2025-05-11 19:41:52,261 - News Chatbot - INFO - Initializing ChromaDB collection...
+2025-05-11 19:41:52,271 - News Chatbot - INFO - Deleted ChromaDB collection 'news_articles'
+2025-05-11 19:41:52,287 - News Chatbot - INFO - Created new ChromaDB collection 'news_articles'
+2025-05-11 19:41:52,292 - News Chatbot - INFO - Initial collection count: 0
+2025-05-11 19:41:52,292 - News Chatbot - INFO - Fetching articles from source: https://www.aljazeera.com/xml/rss/all.xml
+2025-05-11 19:41:52,527 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/putin-proposes-ukraine-peace-talks-after-western-leaders-threaten-sanctions?traffic_source=rss
+2025-05-11 19:41:52,527 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/pope-leo-xiv-calls-for-gaza-ceasefire-in-first-sunday-message?traffic_source=rss
+2025-05-11 19:41:52,527 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/opinions/2025/5/11/what-the-christians-of-the-holy-land-expect-from-pope-leo-xiv?traffic_source=rss
+2025-05-11 19:41:52,527 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/pope-leo-xiv-deeply-saddened-by-gaza-calls-for-aid-and-a-ceasefire?traffic_source=rss
+2025-05-11 19:41:52,527 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/iran-says-nuclear-enrichment-non-negotiable-before-us-talks-in-oman?traffic_source=rss
+2025-05-11 19:41:52,528 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/trump-offers-to-work-with-india-pakistan-on-kashmir?traffic_source=rss
+2025-05-11 19:41:52,528 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/heavy-rains-cause-flooding-in-somali-capital-killing-seven?traffic_source=rss
+2025-05-11 19:41:52,528 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/turkish-student-rumeysa-ozturk-says-she-will-continue-to-pursue-her-case?traffic_source=rss
+2025-05-11 19:41:52,529 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/bangladesh-bans-activities-of-awami-league-the-party-of-ousted-pm-hasina?traffic_source=rss
+2025-05-11 19:41:52,529 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/gallery/2025/5/11/week-in-pictures-from-india-pakistan-fighting-to-v-e-day-anniversary?traffic_source=rss
+2025-05-11 19:41:52,530 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/features/longform/2025/5/11/resistance-and-extractivism-inside-carrara-italys-home-of-white-marble?traffic_source=rss
+2025-05-11 19:41:52,530 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/pinch-point/2025/5/11/the-race-for-rare-earths?traffic_source=rss
+2025-05-11 19:41:52,530 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/edwards-timberwolves-overcome-warriors-in-game-3-to-take-2-1-series-lead?traffic_source=rss
+2025-05-11 19:41:52,530 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/newsfeed/2025/5/11/freed-turkish-student-rumeysa-ozturk-thanks-supporters-after-her-release?traffic_source=rss
+2025-05-11 19:41:52,531 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/quotable/2025/5/11/india-and-pakistan-are-keen-to-avoid-further?traffic_source=rss
+2025-05-11 19:41:52,531 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/difficult-ceasefire-guns-silent-but-will-the-india-pakistan-truce-hold?traffic_source=rss
+2025-05-11 19:41:52,531 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/albania-votes-in-general-elections-as-pm-edi-rama-seeks-a-fourth-term?traffic_source=rss
+2025-05-11 19:41:52,531 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/sri-lanka-bus-carrying-pilgrims-veers-off-cliff?traffic_source=rss
+2025-05-11 19:41:52,532 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/11/ufc-315-della-maddalena-defeats-muhammad-in-welterweight-title-fight?traffic_source=rss
+2025-05-11 19:41:52,532 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/11/putin-proposes-direct-russia-ukraine-talks-in-istanbul-on-may-15?traffic_source=rss
+2025-05-11 19:41:52,532 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/program/the-listening-post/2025/5/10/israel-capitalises-as-gaza-fatigue-sets-in?traffic_source=rss
+2025-05-11 19:41:52,533 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/video/inside-story/2025/5/10/will-the-truce-between-india-and-pakistan-resolve-differences-over-kashmir?traffic_source=rss
+2025-05-11 19:41:52,533 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/israeli-protesters-in-tel-aviv-demand-an-end-to-war-on-gaza?traffic_source=rss
+2025-05-11 19:41:52,533 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/news/2025/5/10/newark-mayor-denies-trespassing-at-immigration-center-following-arrest?traffic_source=rss
+2025-05-11 19:41:52,533 - News Chatbot - INFO - Successfully fetched article from https://www.aljazeera.com/xml/rss/all.xml: https://www.aljazeera.com/sports/2025/5/10/barcelona-vs-real-madrid-ancelotti-coy-on-future-as-alonso-link-grows?traffic_source=rss
+2025-05-11 19:41:52,533 - News Chatbot - INFO - Fetching articles from source: http://rss.cnn.com/rss/edition.rss
+2025-05-11 19:41:53,868 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Trump pleads not guilty to 34 felony counts', 'url': 'https://edition.cnn.com/webview/politics/live-news/trump-indictment-stormy-daniels-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:41:53,868 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/05/maggie-haberman-donald-trump-speech-indictment-reaction-sot-cnntm-vpx.cnn
+2025-05-11 19:41:53,868 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'What to know about the Trump indictment on the eve of his court appearance', 'url': 'https://www.cnn.com/collections/intl-trump-040223/', 'published_date': 'Wed, 05 Apr 2023 22:50:06 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:41:53,869 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'READ: Trump indictment related to hush money payment', 'url': 'https://cnn.it/411KYN7', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:41:53,869 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Russian authorities detain suspect over St. Petersburg cafe blast', 'url': 'https://edition.cnn.com/webview/europe/live-news/russia-ukraine-war-news-04-03-23/index.html', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:41:53,869 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/02/russian-military-blogger-vladlen-tatarsky-killed-cafe-explosion-chance-vpx.cnn
+2025-05-11 19:41:53,869 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Wall Street Journal reporter Evan Gershkovich appeals against arrest, Russian state media says', 'url': 'https://www.cnn.com/collections/intl-ukraine-030423/', 'published_date': 'Mon, 03 Apr 2023 13:58:58 GMT', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:41:53,870 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/politics/chinese-spy-balloon/index.html
+2025-05-11 19:41:53,870 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/asia/tsai-ing-wen-taiwan-mccarthy-meeting-analysis-intl-hnk/index.html
+2025-05-11 19:41:53,870 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/soldiers-russia-ukraine-war-david-mckenzie-pkg-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:41:53,870 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/world/artemis-2-astronaut-crew-scn/index.html
+2025-05-11 19:41:53,871 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/french-minister-playboy-cover-intl/index.html
+2025-05-11 19:41:53,871 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/finland-prime-minister-sanna-marin-concedes-election-right-wing-party-wins-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:41:53,871 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/investing/british-pound-currency-dollar/index.html
+2025-05-11 19:41:53,871 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/02/europe/sanna-marin-finland-elections-concedes-intl/index.html
+2025-05-11 19:41:53,871 - News Chatbot - WARNING - Skipping article due to missing fields: {'title': 'Hundreds of millions at risk from Chinese shopping app malware', 'url': 'https://cnn.it/40OSomK', 'published_date': '', 'source': 'http://rss.cnn.com/rss/edition.rss', 'content': '', 'chunks': []}
+2025-05-11 19:41:53,871 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/beauty-skincare-climate/index.html
+2025-05-11 19:41:53,871 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/nasal-vaccine-sterilizing-immunity/index.html
+2025-05-11 19:41:53,871 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/04/03/man-throws-yogurt-on-women-iran-president-raisi-hijab-is-law-nada-bashir-ovn-intl-ldn-vpx.cnn
+2025-05-11 19:41:53,872 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/israel-protests-military-veterans-intl-cmd/index.html
+2025-05-11 19:41:53,872 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/middleeast/kurdish-kingmaker-turkish-elections-mime-intl/index.html
+2025-05-11 19:41:53,873 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/dogecoin-elon-musk-twitter/index.html
+2025-05-11 19:41:53,873 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/china-micron-probe-us-chip-war-intl-hnk/index.html
+2025-05-11 19:41:53,873 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/weather/2023/04/02/little-rock-arkansas-tornado-man-inside-van-cnntmw-vpx.cnn
+2025-05-11 19:41:53,873 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/china-renaissance-delays-results-missing-ceo-intl-hnk/index.html
+2025-05-11 19:41:53,874 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/business/hsbc-spin-off-hk-shareholder-meeting-intl-hnk/index.html
+2025-05-11 19:41:53,874 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/politics/2023/04/02/john-fetterman-depression-downward-spiral-acostanr-sot-vpx.cnn
+2025-05-11 19:41:53,874 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/investing/premarket-stocks-trading/index.html
+2025-05-11 19:41:53,874 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/pet-cemeteries-burying-animals-history-tourigny/index.html
+2025-05-11 19:41:53,875 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/asia/deepest-fish-filmed-off-japan-scn-intl-hnk/index.html
+2025-05-11 19:41:53,875 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/energy/gas-prices-opec/index.html
+2025-05-11 19:41:53,875 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/world/2023/03/31/israel-protests-rise-taxi-driver-attacked-robertson-pkg-intl-vpx.cnn
+2025-05-11 19:41:53,876 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/opinions/60-minutes-marjorie-taylor-greene-interview-obeidallah/index.html
+2025-05-11 19:41:53,876 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/new-big-5-wildlife-photography-book-c2e-scn-spc-intl/index.html
+2025-05-11 19:41:53,876 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/04/europe/germany-mayor-syrian-refugee-intl/index.html
+2025-05-11 19:41:53,877 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/health/autism-lithium-study/index.html
+2025-05-11 19:41:53,877 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/style/article/kwame-brathwaite-obituary-tan/index.html
+2025-05-11 19:41:53,877 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/travel/article/haggis-scotland-secrets/index.html
+2025-05-11 19:41:53,877 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/tech/twitter-blue-checks/index.html
+2025-05-11 19:41:53,877 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/travel/2023/04/03/snailfish-deepest-fish-on-camera-lon-orig-ao-cprog-scn.cnn
+2025-05-11 19:41:53,878 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/emma-willis-mabel-birthday-photos-intl-scli/index.html
+2025-05-11 19:41:53,878 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/lionel-messi-psg-whistles-fans-spt-intl/index.html
+2025-05-11 19:41:53,878 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/football/chelsea-graham-potter-manager-premier-league-spt-intl/index.html
+2025-05-11 19:41:53,878 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/media/2023/04/02/mark-hamill-star-wars-jim-acosta-skywalker-cprog-acostanr-vpx.cnn
+2025-05-11 19:41:53,878 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/angel-reese-gesture-caitlin-clark-lsu-iowa-spt-intl/index.html
+2025-05-11 19:41:53,880 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/summer-mcintosh-world-record-canada-swimmer-spt-intl/index.html
+2025-05-11 19:41:53,880 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/golf/rory-mcilroy-masters-meltdown-2011-spt-spc-intl/index.html
+2025-05-11 19:41:53,880 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/videos/us/2023/03/31/snowboarder-rescue-mt-baker-washington-cprog-lon-orig-na.cnn
+2025-05-11 19:41:53,880 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/sport/march-madness-championship-game-final-preview-spt-intl/index.html
+2025-05-11 19:41:53,880 - News Chatbot - INFO - Successfully fetched article from http://rss.cnn.com/rss/edition.rss: https://www.cnn.com/2023/04/03/entertainment/shania-twain-equal-diversity/index.html
+2025-05-11 19:41:53,880 - News Chatbot - INFO - Total articles fetched: 69
+2025-05-11 19:41:53,881 - News Chatbot - INFO - Fetched 50 articles
+2025-05-11 19:41:53,882 - News Chatbot - INFO - Cleared Redis database
+2025-05-11 19:41:53,882 - News Chatbot - INFO - 
+=== Processing article 1/50 ===
+2025-05-11 19:41:53,882 - News Chatbot - INFO - Title: Putin proposes Ukraine peace talks after Western l...
+2025-05-11 19:41:53,882 - News Chatbot - DEBUG - Validated article: Putin proposes Ukraine peace talks after Western leaders threaten sanctions
+2025-05-11 19:41:53,882 - News Chatbot - DEBUG - Stored article metadata in Redis: article:0
